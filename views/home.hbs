@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK BIKE SERVICE</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="/style.css">
+    <style>
+    .content-container {
+    text-align: center; /* Center-align the content */
+    margin-top: 0px; /* Adjust as needed for spacing */
+}
+
+.details {
+    display: inline-block; /* Display details as inline blocks for horizontal layout */
+    text-align: left; /* Reset text alignment for details */
+    width: 20%; /* Adjust as needed to control the width of the content */
+    padding: 10px; /* Add padding for spacing */
+    margin: 10px; /* Add margin to separate details */
+}
+</style>
+    
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <img src="/nk.jpeg" alt="logo" width="100px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- navigate the html pages-->
+                     <li class="nav-item">
+                        <a class="nav-link active" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/booking">Service booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/viewbook">View booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">Admin</a>
+                    </li>
+                    
+                    
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            {{#if msg3}}
+                     <p class="{{msg_type3}}">{{msg3}}</p> 
+                     {{/if}} 
+            <img src="nk.jpeg" align="right" width="550px" height="350px">
+            <h2> <span>WELCOME TO NK BIKE SERVICE</span> <br> Best Bike service</h2>
+            <p>Get Your Bike Service.</p>
+            <button class="text-uppercase" onclick="window.location.href='/services';">Explore Now</button>
+        </div>
+        </section>
+   <!-- availability in our company-->     
+    <div class="content-container">
+    <div class="details">
+        <h2 >Water Wash</h2>
+            <h5>Shampoo wash</h5>
+            <h5>Foam wash</h5>
+            <h5>Dry wash</h5>
+    </div>
+
+    <div class="details">
+        <h2>Oil Service</h2>
+        
+            <h5>Engine oil</h5>
+            <h5>Transmission oil</h5>
+            <h5>Chain lubrication</h5>
+        
+    </div>
+
+    <div class="details">
+        <h2>General service</h2>
+            <h5>Air filter cleaning<h5>
+            <h5>Chain setting</h5>
+            <h5>clutch adjustments<h5>
+        
+    </div>
+</div>
+
+    <section id="Featured" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Our Featured Products</h3>
+            <hr class="mx-auto">
+            <p>Here you can check our new products with fair price</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/download.jpeg" alt="">
+                <h5 class="p-name">Horn</h5>
+                <h4 class="p-price">₹700.00 - ₹2,000.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/fueltank.jpeg" alt="">
+                <h5 class="p-name">Fuel Tank</h5>
+                <h4 class="p-price">₹1,500.00 - ₹12,000.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/suspension.jpeg" alt="">
+                <h5 class="p-name">Suspension</h5>
+                <h4 class="p-price">₹500.00 - ₹3,000.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/exhaust.jpeg" alt="">
+                <h5 class="p-name">Exhaust</h5>
+                <h4 class="p-price">₹699.00 - ₹5,000.00</h4>
+                
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/speed.jpeg" alt="">
+                <h5 class="p-name">Speedometer</h5>
+                <h4 class="p-price">₹700.00 - ₹6,760.00</h4>
+                
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/cb.jpeg" alt="">
+                <h5 class="p-name">Chain Sprocket</h5>
+                <h4 class="p-price">₹680.00 - ₹5,999.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/fork.jpeg" alt="">
+                <h5 class="p-name">Fork</h5>
+                <h4 class="p-price">₹1,000.00 - ₹5,000.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/throt.jpeg" alt="">
+                <h5 class="p-name">Throttle</h5>
+                <h4 class="p-price">₹1,100.00 - ₹4,960.00</h4>
+                
+            </div>
+        </div>
+
+        <div class="container text-center mt-5 py-5">
+            <h3>Featured Interior Parts</h3>
+            <hr class="mx-auto">
+            <p>Best Selling Interior Parts</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/carpater.jpeg" alt="">
+                <h5 class="p-name">Carburetor</h5>
+                <h4 class="p-price">₹3,700 - ₹10,000.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/airfilter.jpeg" alt="">
+                <h5 class="p-name">Air Filter</h5>
+                <h4 class="p-price">₹250.00 - ₹1,200.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/trans1.jpeg" alt="">
+                <h5 class="p-name">Transmission</h5>
+                <h4 class="p-price">₹8,000.00 - ₹14,000.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/sparkplug.jpeg" alt="">
+                <h5 class="p-name">Spark Plug</h5>
+                <h4 class="p-price">₹200.00 - ₹1,600.00</h4>
+               
+            </div>
+
+         <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/battery.jpeg" alt="">
+                <h5 class="p-name">Battery</h5>
+                <h4 class="p-price">₹1,000.00 - ₹2,000.00</h4>
+               
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/pis1.jpeg" alt="">
+                <h5 class="p-name">Piston & Rings</h5>
+                <h4 class="p-price">₹1,000.00 - ₹1,500.00</h4>
+               
+            </div>
+            
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/brake.jpeg" alt="">
+                <h5 class="p-name">Brake Disc</h5>
+                <h4 class="p-price">₹1,450.00 - ₹4,370.00</h4>
+               
+            </div>
+             <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/rr.jpeg" alt="">
+                <h5 class="p-name">Radiator Fan</h5>
+                <h4 class="p-price">₹3,050.00 - ₹6,800.00</h4>
+               
+            </div>
+
+        </div>
+
+        <div class="container text-center mt-5 py-5">
+            <h3>Featured Exterior Parts</h3>
+            <hr class="mx-auto">
+            <p>Best Selling Exterior Parts</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/hl1.jpeg" alt="">
+                <h5 class="p-name">Head Light</h5>
+                <h4 class="p-price">₹350.00 – ₹1,200.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/indicator.jpeg" alt="">
+                <h5 class="p-name">Indicator</h5>
+                <h4 class="p-price">₹100.00 - ₹500.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/mirror.jpeg" alt="">
+                <h5 class="p-name">Mirror</h5>
+                <h4 class="p-price">₹300.00 - ₹1,380.00</h4>
+               
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/tyre.jpeg" alt="">
+                <h5 class="p-name">Tyre</h5>
+                <h4 class="p-price">₹800.00 - ₹3,685.00</h4>
+                
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/stand.jpeg" alt="">
+                <h5 class="p-name">Stand</h5>
+                <h4 class="p-price">₹120.00 - ₹800.00</h4>
+                
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/sg.jpeg" alt="">
+                <h5 class="p-name">Saree Guard</h5>
+                <h4 class="p-price">₹635.00 - ₹1,051.00</h4>
+                
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/fp.jpeg" alt="">
+                <h5 class="p-name">Foot Pegs</h5>
+                <h4 class="p-price">₹2,770.00 - ₹7,090.00</h4>
+                
+            </div>
+             <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/sc.jpeg" alt="">
+                <h5 class="p-name">Seat Cover</h5>
+                <h4 class="p-price">₹1,500.00 - ₹3,000.00</h4>
+                
+            </div>
+
+        </div>
+
+    </section>
+    
+
+  <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <p class="pt-3">We are NK bike service. We are selling the best quality bike parts all over
+                    tamilnadu. We have various bike parts collections.</p>
+           
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h6 class="pb-2">Products</h6>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="">CHAIN</a></li>
+                    <li><a href="">SPARK PLUG</a></li>
+                    <li><a href="">CLUTCH</a></li>
+                    <li><a href="">RIM</a></li>
+                    <li><a href="">STAND</a></li>
+                    <li><a href="">SPEEDOMETER</a></li>
+                    <li><a href="">SEAT</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>96 B, Erode Road,
+                        Kandhampalayam,
+                        Perundurai,
+                        638052.</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Contact</h6>
+                    <p>+918675955262
+                        +916380313788</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>nkbikeservice36@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-4 col-md-6 col-12 mb-2 text-nowrap">
+                    <p>© Copyright 2023.NKbikeservice.com. All Rights Reserved | Privacy Policy | Terms &
+                        Conditions
+                | Shipping Policy | Return | Refund | Cancellation Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+        <script src="E:\PROJECT\Web Page\Back-End\connectivity.js"></script>
+        </script>
+    
+
+</body>
+
+</html>

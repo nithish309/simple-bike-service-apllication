@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK BIKE SERVCICE</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .product img {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+
+        #Featured>div:nth-child(4)>nav>ul>li.page-item.active>a {
+            background-color: black;
+        }
+
+        #Featured>div:nth-child(4)>nav>ul>li:nth-child(n):hover>a {
+            background-color: coral;
+            color: #fff;
+        }
+
+        .pagination a {
+            color: #000;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <img src="/nk.jpeg" alt="logo" width="100px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- navigate the html pages-->
+                     <li class="nav-item">
+                        <a class="nav-link active" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/booking">Service booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/viewbook">View booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">Admin</a>
+                    </li>
+                    
+                    
+            </div>
+        </div>
+    </nav>
+    <!-- our services-->
+    <section id="Featured" class="my-5 py-5">
+        <div class="container mt-5 py-5">
+            <h2 class="font-weight-bold">Our Services</h2>
+            <hr>
+            <p>Here you can service two-wheeler with fair price</p>
+        </div>
+        <div class="row mx-auto container">
+            <div onclick="window.location.href='/booking';" class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/service.jpeg" alt="">
+                <h4 class="p-name">Service And Repair</h4>
+                <h5 class="p-des">We have an expert team to provide two wheeler repair and services.</h5>
+                <button class="buy-btn">Booking</button>
+            </div>
+            
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/batery.jpeg" alt="">
+                <h4 class="p-name">Repair Batteries</h4>
+                <h5 class="p-des">We have quality checked batteries to give a long lasting service.</h5>
+                <button class="buy-btn" onclick="window.location.href='/booking';">Booking</button>
+            </div>
+            
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/dent.jpeg" alt="">
+                <h4 class="p-name">Denting/Painting</h4>
+                <h5 class="p-des">We provide denting and painting services for your two wheeler.</h5>
+                <button class="buy-btn" onclick="window.location.href='/booking';">Booking</button>
+            </div>
+        <div class="row mx-auto container">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/oil.jpeg" alt="">
+                <h4 class="p-name">Oil service</h4>
+                <h5 class="p-des">We have an expert team for the two wheelers to make a oil service.</h5>
+                <button class="buy-btn" onclick="window.location.href='/booking';">Booking</button>
+            </div>
+            
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/watter.jpeg" alt="">
+                <h4 class="p-name">Water wash</h4>
+                <h5 class="p-des">We have an expert team for water wash the two wheelers.</h5>
+                <button class="buy-btn" onclick="window.location.href='/booking';">Booking</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="/adj.jpeg" alt="">
+                <h4 class="p-name">Adjustments</h4>
+                <h5 class="p-des">We have an expert team for the two wheelers adjustments.</h5>
+                <button class="buy-btn" onclick="window.location.href='/booking';">Booking</button>
+            </div>
+            
+            
+        </div>
+
+    </section>
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <p class="pt-3">We are NK bike service. We are selling the best quality bike parts all over
+                    tamilnadu. We have various bike parts collections.</p>
+           
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h6 class="pb-2">Products</h6>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="">CHAIN</a></li>
+                    <li><a href="">SPARK PLUG</a></li>
+                    <li><a href="">CLUTCH</a></li>
+                    <li><a href="">RIM</a></li>
+                    <li><a href="">STAND</a></li>
+                    <li><a href="">SPEEDOMETER</a></li>
+                    <li><a href="">SEAT</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>96 B, Erode Road,
+                        Kandhampalayam,
+                        Perundurai,
+                        638052.</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Contact</h6>
+                    <p>+918675955262
+                        +916380313788</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>nkbikeservice36@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-4 col-md-6 col-12 mb-2 text-nowrap">
+                    <p>© Copyright 2023.NKbikeservice.com. All Rights Reserved | Privacy Policy | Terms &
+                        Conditions
+                | Shipping Policy | Return | Refund | Cancellation Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+        <script src="E:\PROJECT\Web Page\Back-End\connectivity.js"></script>
+        </script>
+
+</body>
+
+</html>

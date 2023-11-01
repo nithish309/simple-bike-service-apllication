@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK BIKE SERVCICE</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        function validateMobileNumber() {
+            const mobileNumber = document.getElementById("loginMobile").value;
+            const mobileRegex = /^\d{10}$/; // Regular expression for exactly 10 digits
+
+            if (mobileRegex.test(mobileNumber)) {
+                return true; // Mobile number is valid
+            } else {
+                alert("Please enter a valid 10-digit mobile number.");
+                return false; // Mobile number is invalid
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <img src="/nk.jpeg" alt="logo" width="100px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- navigate the html pages-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Contact Us</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/">Service booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">View booking</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reg">Admin</a>
+                    </li>
+                    
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <div class="d-flex justify-content-center align-items-center">
+        <section class="form-box">
+
+            <!--Register Form-->
+            <form id="loginForm" method="post" action="/auth/reg" onsubmit="return validateMobileNumber();">
+                <section class="login-container" id="login">
+                    <header class="py-0">Register</header>
+                    <hr class="mx-auto">
+                    <div class="input-box">
+                     {{#if msg2}}
+                     <p class="{{msg_type2}}">{{msg2}}</p> 
+                     {{/if}}
+                        <input type="email" id="registerEmail" name="email" class="input-field" placeholder="Email" required>
+                        
+                        <p class="error-message" id="loginError"></p>
+                    </div><br>
+                    <div class="input-box">
+                        <input type="number" id="loginMobile" name="phone" class="input-field" placeholder="Mobile no" required>
+                        
+                        <p class="error-message" id="passError"></p>
+                    </div><br>
+                    
+                    <div class="input-box">
+                        <button type="submit" class="submit">Sign In</button>
+                    </div>
+                </section>
+            </form>
+        </section>
+    </div>
+
+
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <p class="pt-3">We are NK bike service. We are selling the best quality bike parts all over
+                    tamilnadu. We have various bike parts collections.</p>
+           
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h6 class="pb-2">Products</h6>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="">CHAIN</a></li>
+                    <li><a href="">SPARK PLUG</a></li>
+                    <li><a href="">CLUTCH</a></li>
+                    <li><a href="">RIM</a></li>
+                    <li><a href="">STAND</a></li>
+                    <li><a href="">SPEEDOMETER</a></li>
+                    <li><a href="">SEAT</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>96 B, Erode Road,
+                        Kandhampalayam,
+                        Perundurai,
+                        638052.</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Contact</h6>
+                    <p>+918675955262
+                        +916380313788</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>nkbikeservice36@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-4 col-md-6 col-12 mb-2 text-nowrap">
+                    <p>© Copyright 2023.NKbikeservice.com. All Rights Reserved | Privacy Policy | Terms &
+                        Conditions
+                | Shipping Policy | Return | Refund | Cancellation Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+        <script src="E:\PROJECT\Web Page\Back-End\connectivity.js"></script>
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK BIKE SERVCICE</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="/style.css">
+    
+
+</head>
+
+<body>
+    <!-- admin view all booking-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <img src="/nk.jpeg" alt="logo" width="100px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <!-- navigate the html pages-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/update">Update Status</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="/select">View booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/select1">View All booking</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/delete">Delete booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/date">Date updation</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    
+ <div class="d-flex justify-content-center align-items-center">
+        <section class="form-box">
+    <form id="loginForm" method="post" action="/auth/select1" onsubmit="return validateVehicleNum()">
+                <section class="login-container" id="login">
+                    <div class="input-box">
+                    <div class="input-box">
+                        <button type="submit" class="submit">View All booking</button>
+                    </div><br>
+                </section>
+            </form>
+        </section>
+</div>
+    </body>
+    </html>
