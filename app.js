@@ -1,31 +1,22 @@
 // object create for node packages
 const express=require('express');
-const mysql=require("mysql2");
 const path=require("path");
 const hbs=require("hbs");
 const app=express();
+//const mongoose=require("mongoose");
+const { MongoClient } = require("mongodb");
 
 //create connection
 
-const db=mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"",
-    database:"store",
-});
-
-
-//connection success or not
-
-db.connect((err)=>{
-if(err){
-    console.log(err);
-}else{
-     console.log("sucess");
-}
-});
-
-
+const url = 'mongodb://localhost:27017';
+MongoClient
+  .connect(url)
+  .then(() => {
+    console.log('Connected to MongoDB');
+  })
+  .catch((error) => {
+    console.error('Error connecting to MongoDB:', error);
+  });
 
 app.use(express.urlencoded({extended:false}));
 
