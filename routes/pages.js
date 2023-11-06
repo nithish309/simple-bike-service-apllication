@@ -11,10 +11,6 @@ router.get("/home",(req,res)=>{
     //res.send("<h1>Welcome</h1>");
     res.render("home");
 });
-router.get("/reg",(req,res)=>{
-    //res.send("<h1>Welcome</h1>");
-    res.render("reg");
-});
 
 router.get("/about",(req,res)=>{
     //res.send("<h1>Welcome</h1>");
